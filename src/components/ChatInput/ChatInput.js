@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import PropTypes from 'prop-types';
 
 const ChatInput = ({addNewMessage}) => {
   const [inputMessage, setInputMessage] = useState('');
@@ -24,5 +25,9 @@ const ChatInput = ({addNewMessage}) => {
     </form>
   );
 };
+
+ChatInput.propTypes = {
+  addNewMessage: PropTypes.func.isRequired
+}
 
 export default ChatInput;

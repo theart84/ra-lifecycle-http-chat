@@ -28,9 +28,6 @@ function App() {
     };
   });
 
-
-
-
   const addNewMessageHandler = async (message) => {
     try {
       const payload = {
@@ -43,8 +40,6 @@ function App() {
       return <p>Error: {error}</p>
     }
   }
-
-
 
   return (
     <div className="container pt-4">
